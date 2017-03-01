@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace memsWebpanel\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use memsWebpanel\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

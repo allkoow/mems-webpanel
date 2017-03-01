@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace memsWebpanel;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function agents() {
+        return $this->hasMany(Agent::class);
+    }
+
+    public function role() {
+        return $this->hasOne(Role::class);
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace memsWebpanel\Http\Controllers;
 
 use Illuminate\Http\Request;
 
